@@ -49,3 +49,26 @@ const nikumi = ["hanako", "makko", "booko", "kayoko"];
 // const classAll=ichikumi+nikumi
 // classAll[2]="bb";
 // console.log(classAll);
+
+/**
+ * mapやフィルターを使った配列処理
+ */
+
+// for (let index = 0; index < ichikumi.length; index++) {
+//   console.log(ichikumi[index]);
+// }
+
+// const ichikumi2 = ichikumi.map((name) => {
+//   return name;
+// });
+// console.log(ichikumi2); //1番
+// ichikumi.map((name) => console.log(name)); //2番
+
+const bookumi = ["bootarou", "boojirou", "boosaburou", "boochan"];
+// const numBoo = [1, 2, 3, 4];
+// const newNumBoo = numBoo.filter((num) => {
+//   return num % 2 === 0;
+// });
+// console.log(newNumBoo);
+
+bookumi.map((name, index) => console.log(`あなたは${index + 1}位${name}`));
