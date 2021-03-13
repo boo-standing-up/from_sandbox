@@ -64,11 +64,19 @@ const nikumi = ["hanako", "makko", "booko", "kayoko"];
 // console.log(ichikumi2); //1番
 // ichikumi.map((name) => console.log(name)); //2番
 
-const bookumi = ["bootarou", "boojirou", "boosaburou", "boochan"];
+const bookumi = ["bootarou", "boojirou", "boosaburou", "boo"];
 // const numBoo = [1, 2, 3, 4];
 // const newNumBoo = numBoo.filter((num) => {
 //   return num % 2 === 0;
 // });
 // console.log(newNumBoo);
 
-bookumi.map((name, index) => console.log(`あなたは${index + 1}位${name}`));
+// bookumi.map((name) => console.log(`こんにちは${name}さん`));
+const booKumiSan = bookumi.map((name) => {
+  if (name === "boo") {
+    return name;
+  } else {
+    return `${name}さん`;
+  }
+});
+console.log(booKumiSan);
