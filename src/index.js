@@ -42,5 +42,10 @@
 //コピーと結合
 const ichikumi = ["tarou", "jirou", "saburou", "boo"];
 const nikumi = ["hanako", "makko", "booko", "kayoko"];
-const classAll = [...ichikumi, ...nikumi];
-console.log(classAll);
+// const classAll = [...ichikumi, ...nikumi];
+// classAll[2]="bb";
+// console.log(classAll);
+
+// const classAll=ichikumi+nikumi
+// classAll[2]="bb";
+// console.log(classAll);
