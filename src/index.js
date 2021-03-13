@@ -72,11 +72,22 @@ const bookumi = ["bootarou", "boojirou", "boosaburou", "boo"];
 // console.log(newNumBoo);
 
 // bookumi.map((name) => console.log(`こんにちは${name}さん`));
-const booKumiSan = bookumi.map((name) => {
-  if (name === "boo") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
-console.log(booKumiSan);
+// const booKumiSan = bookumi.map((name) => {
+//   if (name === "boo") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(booKumiSan);
+
+/**
+ * 三項演算子
+ */
+
+// if elseを一行で書くのが三項演算子
+//　ある条件　？　turu:　folase
+
+const chang = 1 < 0 ? `OK` : `NO`;
+
+console.log(chang);
