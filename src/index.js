@@ -40,8 +40,8 @@
 // console.log(className3);
 
 //コピーと結合
-const ichikumi = ["tarou", "jirou", "saburou", "boo"];
-const nikumi = ["hanako", "makko", "booko", "kayoko"];
+// const ichikumi = ["tarou", "jirou", "saburou", "boo"];
+// const nikumi = ["hanako", "makko", "booko", "kayoko"];
 // const classAll = [...ichikumi, ...nikumi];
 // classAll[2]="bb";
 // console.log(classAll);
@@ -86,8 +86,22 @@ const bookumi = ["bootarou", "boojirou", "boosaburou", "boo"];
  */
 
 // if elseを一行で書くのが三項演算子
-//　ある条件　？　turu:　folase
+// //　ある条件　？　turuの時:　folaseの時
 
-const chang = 1 < 0 ? `OK` : `NO`;
+// const chang = 1 < 0 ? `OK` : `NO`;
 
-console.log(chang);
+// console.log(chang);
+
+const num = 18000;
+
+// 数値と文字列入力がわかるようにコードを書く
+// typeof その数値のタイプを表示
+
+const formatNum =
+  typeof num === "number" ? num.toLocaleString() : "数値入力してね";
+console.log(formatNum);
+
+const checkSam = (num1, num2) => {
+  return num1 * num2 < 100 ? "100以下じゃ" : "100こしてら";
+};
+console.log(checkSam(50, 30));
