@@ -92,16 +92,31 @@ const bookumi = ["bootarou", "boojirou", "boosaburou", "boo"];
 
 // console.log(chang);
 
-const num = 18000;
+// const num = 18000;
 
-// 数値と文字列入力がわかるようにコードを書く
-// typeof その数値のタイプを表示
+// // 数値と文字列入力がわかるようにコードを書く
+// // typeof その数値のタイプを表示
 
-const formatNum =
-  typeof num === "number" ? num.toLocaleString() : "数値入力してね";
-console.log(formatNum);
+// const formatNum =
+//   typeof num === "number" ? num.toLocaleString() : "数値入力してね";
+// console.log(formatNum);
 
-const checkSam = (num1, num2) => {
-  return num1 * num2 < 100 ? "100以下じゃ" : "100こしてら";
-};
-console.log(checkSam(50, 30));
+// const checkSam = (num1, num2) => {
+//   return num1 * num2 < 100 ? "100以下じゃ" : "100こしてら";
+// };
+// console.log(checkSam(50, 30));
+
+/**
+ * 論理演算子の本当の意味を知ろう　　&& ||
+ */
+
+//　||左側がfalseなら右を返す
+const ok1 = true;
+const ok2 = false;
+if (ok2 || ok1) {
+  console.log("左側がflaseなら右側を返す");
+}
+
+const num = null;
+const kingaku = num || "金額ですか？";
+console.log(kingaku);
